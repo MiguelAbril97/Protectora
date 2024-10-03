@@ -2,16 +2,16 @@ from django.shortcuts import render
 from .models import Animal, Colaborador, Protectora
 # Create your views here.
 
-def entradas(request):
+def entradaAnimales(request):
     entrada = Animal.objects.all() 
-    return render(request, 'blog/entradas.html', {'Animal_mostrar': entrada})
+    return render(request, 'blog/entradaAnimales.html', {'Animal_mostrar': entrada})
 
-def entradas(request):
+def entradaColaboradores(request):
     entrada = Colaborador.objects.all() 
-    return render(request, 'blog/entradas.html', {'Colaborador_mostrar': entrada})
+    return render(request, 'blog/entradaColaboradores.html', {'Colaborador_mostrar': entrada})
 
-def entradas(request):
+def entradaProtectoras(request):
     entrada = Protectora.objects.all() 
-    return render(request, 'blog/entradas.html', {'Protectora_mostrar': entrada})
+    return render(request, 'blog/entradaProtectoras.html', {'Protectora_mostrar': entrada})
 
 

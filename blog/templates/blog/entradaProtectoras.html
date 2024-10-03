@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Protectoras</title>
+    </head>
+    
+    <body>
+       
+        <header>
+            <h1>Los datos de la protectora</h1>
+        </header>
+        
+        {%for Protectora in Protectora_mostrar%}
+        <article>
+            <p><b>Nombre: {{Protectora.nombre}}</b></p>
+            <p>Tipo: {{Protectora.descripcion}}</p>
+            <time>Fecha creacion {{Protectora.fecha_creacion | linebreaksbr}}</time>
+        </article>  
+        {% endfor %}
+      
+    </body>
+</html>
